@@ -21,25 +21,15 @@
 <body>
     <div class="chatbot-container">
 
+<flowise-fullchatbot></flowise-fullchatbot>
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
+    Chatbot.initFull({
         chatflowid: "d127a97b-4372-42ae-aa47-952e22aff1b5",
         apiHost: "https://orioli-os315.hf.space",
-        chatflowConfig: {
-            // topK: 2
-        },
         theme: {
-            button: {
-                backgroundColor: "#3B81F6",
-                right: 20,
-                bottom: 20,
-                size: "medium",
-                iconColor: "white",
-                customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
-            },
             chatWindow: {
-                welcomeMessage: "To start, type start",
+                welcomeMessage: "Hello! This is custom welcome message",
                 backgroundColor: "#ffffff",
                 height: 700,
                 width: 400,
@@ -66,9 +56,7 @@
             }
         }
     })
-</script>
-
-    </div>
+</script>    </div>
 
     <!-- Bottom text -->
     <div class="bottom-text">
